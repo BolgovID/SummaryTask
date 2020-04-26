@@ -1,0 +1,32 @@
+.checkContainer {
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 10px 0;
+    margin: 10px    20px;
+}
+
+.green{
+    color:limegreen;
+}
+
+.orange{
+    color: orange;
+}
+
+p {
+    text-align: center;
+    color: black;
+}
+
+#form1 input[type="submit"] {
+    color: black;
+}
+
+#form2 input[type="submit"] {
+    color: white;
+}
+
+#form2 input[type="submit"]:hover {
+    color: black;
+}

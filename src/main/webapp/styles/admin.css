@@ -1,0 +1,81 @@
+.commandPanel {
+    display: flex;
+    list-style: none;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.commandPanel li {
+    color: white;
+    margin:30px;
+    position: relative;
+    background-color: #3E3E3E;
+    border-radius: 30px;
+    padding: 20px 10px;
+    flex-basis: 200px;
+    flex-grow: 5;
+}
+
+.delete{
+flex-grow: 1 !important;
+}
+
+.oneLine {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.itemCenter {
+    text-align: center;
+    color: #757575;
+    padding: 0 5px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.formContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+input:not([type="submit"]) {
+    width: 100%;
+    margin: 10px 1%;
+    text-align: center;
+    color: white;
+}
+
+[type="submit"] {
+    margin-top: 50px;
+    width: 100%;
+}
+
+select {
+    margin: 5px 0;
+}
+
+p {
+    margin-top: 20px;
+}
+
+.tableContainer{
+    display: flex;
+    padding-top: 20px;
+}
+
+.carListPanel, .userListPanel{
+    margin: 0 5px;
+    width: 48%;
+    height: 330px;
+    overflow: auto;
+}
+

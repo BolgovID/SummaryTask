@@ -1,0 +1,44 @@
+<%--===========================================================================
+Header (top area).
+===========================================================================--%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+<%@ page contentType="text/html;charset=UTF-8" %>
+<%@ include file="/WEB-INF/jspf/directive/taglib.jspf" %>
+<%@ taglib prefix="cm" uri="/WEB-INF/custom.tld" %>
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="scripts/script.js"></script>
+    <title></title>
+</head>
+<c:set value="${sessionScope.localeClass}" var="locale"/>
+<ul class="header">
+    <jsp:useBean id="random" class="ua.nure.bolhov.SummaryTask4.web.tag.RandomBean" scope="application"/>
+    <li class="notGlow">
+        <span class="material-icons">two_wheeler</span>
+        <span class="notActive">RentalCar</span>
+    </li>
+    <c:if test="${not empty sessionScope.user}">
+        <cm:menu locale="${sessionScope.localeClass}" role="${sessionScope.userRole}"/>
+        <li>
+            <span class="material-icons">build</span>
+            <a href="controller?command=viewSettings"><cm:translate locale="${pageScope.locale}" key="settings"
+                                                                    prefix="menu"/></a> &nbsp;
+        </li>
+        <li>
+            <form action="" method="post" id="lang">
+                <input type="hidden" name="command" value="changeLocale">
+                <span class="notActive"> <cm:translate locale="${pageScope.locale}" key="language" prefix="menu"/>:
+                <select name="language" onchange="changeLanguage()">
+                    <option value="en" ${"en" == sessionScope.localeClass.toLanguageTag() ? 'selected':''}>English</option>
+                    <option value="ru" ${"ru" == sessionScope.localeClass.toLanguageTag() ? 'selected':''}>Russian</option>
+                </select>
+            </span>
+            </form>
+        </li>
+        <li>
+            <span><c:out value="${sessionScope.user.login}:"> </c:out></span>
+            <a href="controller?command=logout"><cm:translate prefix="menu" key="log_out"
+                                                              locale="${pageScope.locale}"/></a>
+        </li>
+    </c:if>
+</ul>

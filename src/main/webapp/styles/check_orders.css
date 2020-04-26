@@ -1,0 +1,12 @@
+.table td{
+    padding-left: 20px;
+}
+
+textarea, #commentText{
+    opacity: 0.5;
+}
+
+.noOrders{
+    text-align: center;
+    color: white;
+}

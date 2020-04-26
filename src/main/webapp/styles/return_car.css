@@ -1,0 +1,21 @@
+.table td{
+    padding: 20px 10px;
+}
+
+input[type="number"]{
+    color:white;
+    text-align: center;
+}
+
+textarea, #inputReturnCar, #penaltySpan, #reasonParag{
+    opacity: 0.5;
+}
+
+.center{
+    text-align: center;
+}
+
+.noCars{
+    text-align: center;
+    color:white;
+}

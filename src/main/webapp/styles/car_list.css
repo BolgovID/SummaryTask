@@ -1,0 +1,85 @@
+table, tr, td {
+    border: none;
+}
+
+.search_line {
+    width: 100%;
+    text-align: center;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.search_line li {
+    padding: 10px 0;
+    color: white;
+}
+
+.search_line tr, .search_line td {
+    padding: 10px;
+}
+
+.search_line td {
+    color: white;
+}
+
+.input-data {
+    grid-column: 3/3;
+    grid-row: 2/3;
+    color: white;
+    background-color: #3E3E3E;
+    padding: 10px 30px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.input-data * {
+    padding: 10px 0;
+}
+
+.list_menu_table {
+    padding: 10px;
+}
+
+.list_menu_table td {
+    color: white;
+}
+
+.main-container {
+    grid-column: 2/2;
+    grid-row: 2/2;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.anything {
+    text-align: center;
+    color: white;
+}
+
+.search_list td {
+    padding: 20px 0;
+}
+
+.formInput {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.mainBox form input[type="submit"] {
+    height: 100%;
+}
+
+p{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.search_line select{
+    width: 300px !important;
+    padding: 5px 20px;
+}
